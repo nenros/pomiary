@@ -29,13 +29,12 @@ describe("MeasureStationsList", () => {
     it("should render station", (done) => {
         const { data } = stationsResponse.success
         const mock = fetchMock.get(MeasureStationsList.API_ENDPOINT, stationsResponse.success)
-        const enzymeWrapper = shallow(<MeasureStationsList {...defaultProps} />)
+        const enzymeWrapper = setup()
         setImmediate(() => {
             enzymeWrapper.update()
             expect(enzymeWrapper).toContainReact(<Station station={data[0]} />)
             fetchMock.restore()
             done()
         })
-
     })
 })
