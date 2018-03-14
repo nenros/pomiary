@@ -1,0 +1,21 @@
+{
+    "success": {
+        "status": "success",
+        "message": "Lista stacji",
+        "data": [
+            {
+                "active": true,
+                "name": "Górki Zachodnie",
+                "no": 2,
+                "rain": false,
+                "water": false,
+                "winddir": false,
+                "windlevel": false
+            }
+        ]
+    },
+    "error": {
+        "status": "error",
+        "message": "cos poszlo nie tak"
+    }
+}

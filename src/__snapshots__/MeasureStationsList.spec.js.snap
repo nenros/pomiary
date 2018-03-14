@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MeasureStationsList should render 1`] = `
+<div
+  className="columns is-multiline"
+>
+  <Station
+    key="2"
+    station={
+      Object {
+        "active": true,
+        "name": "Górki Zachodnie",
+        "no": 2,
+        "rain": false,
+        "water": false,
+        "winddir": false,
+        "windlevel": false,
+      }
+    }
+  />
+</div>
+`;
