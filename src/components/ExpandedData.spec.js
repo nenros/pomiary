@@ -8,10 +8,8 @@ import Station from './Station'
 // stworz funkcje do renderowania
 
 describe('ExpandedData', () => {
-    // stworz test ktorzy pobierze dane(pamiętaj o mocku) i sprawdzi
-    //czy odpowednio sie wyrenderowały(na przykłąd długosc tabeli)
-    it.skip("should get data and render table")
+    it.skip("show measure data table")
     // sprawdz czy dziala klikniecie zeby rowinac liste z danymi
-    it.skip("should change expand state after click")
+    it.skip("show error message")
 
 });
