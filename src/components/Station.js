@@ -5,7 +5,7 @@ import ExpandedData from './ExpandedData.js'
 import Card from './hoc/Card'
 import Tabs from './hoc/Tabs'
 
-const Station = ({ station }) => {
+const Station = ({ station }, { measureNameToOption }) => {
     const { name, active, no } = station
     const options = ['rain', 'water', 'winddir', 'windlevel']
     return <div className="column is-half">
