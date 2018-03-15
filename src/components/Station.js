@@ -2,23 +2,30 @@ import React from "react";
 import OptionList from './OptionList'
 import ActivityIcon from './ActivityIcon'
 import ExpandedData from './ExpandedData.js'
+import Card from './hoc/Card'
+import Tabs from './hoc/Tabs'
 
 const Station = ({ station }) => {
     const { name, active, no } = station
     const options = ['rain', 'water', 'winddir', 'windlevel']
     return <div className="column is-half">
-        <div className="box">
-            <div className="content">
-                <div>
-                    <strong>{name}</strong>
-                    <ActivityIcon active={active} />
-                    <br />
-                    Opcje:
+        <Card>
+            <p>
+                <strong>{name}</strong>
+                <ActivityIcon active={active} />
+            </p>
+            <section>
+                <Tabs>
+                    <span>Opcje</span>
                     <OptionList object={station} options={options} />
-                    {options.map((option) => <ExpandedData key={`${no}_${option}`} id={no} option={option} />)}
-                </div>
-            </div>
-        </div>
+                    {options.map((option) =>
+                        <React.Fragment key={`${no}_${option}`}>
+                            <span>{option}</span>
+                            <ExpandedData id={no} option={option} />
+                        </React.Fragment>)}
+                </Tabs>
+            </section>
+        </Card>
     </div>
 }
 

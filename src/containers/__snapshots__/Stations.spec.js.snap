@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stations/> container should render 1`] = `
+<div
+  stations={Array []}
+/>
+`;
+
+exports[`<Stations/> container should render error 1`] = `
+<section
+  className="message is-danger"
+>
+  <div
+    className="message-header"
+  >
+    <p>
+      Error
+    </p>
+  </div>
+  <div
+    className="message-body"
+  >
+    cos nie tak
+  </div>
+</section>
+`;
